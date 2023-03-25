@@ -17,13 +17,13 @@ function Navbar() {
     }
     return (
         <nav
-            className={`sticky top-0 flex h-12 w-screen items-center justify-between bg-black px-5 py-8 uppercase text-white shadow-md transition-all md:px-20`}
+            className={`sticky top-0 z-50 flex h-12 w-screen items-center justify-between bg-black px-5 py-8 uppercase text-white shadow-md transition-all md:px-20`}
         >
             <h1>Mohit.</h1>
             <ul className="hidden gap-10 md:flex">
-                <Link lkn="#!">Home</Link>
-                <Link lkn="#!">About</Link>
-                <Link lkn="#!">Skill</Link>
+                <Link lkn="#">Home</Link>
+                <Link lkn="#about">About</Link>
+                <Link lkn="#about">Skill</Link>
                 <Link lkn="#!">Projects</Link>
             </ul>
             <button className="hidden uppercase md:flex">Contact me</button>
