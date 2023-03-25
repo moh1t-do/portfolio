@@ -2,6 +2,15 @@ import { useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
+import {
+    SiSvelte,
+    SiTailwindcss,
+    SiJavascript,
+    SiReact,
+    SiFirebase,
+    SiAdobeillustrator,
+} from 'react-icons/si'
+
 function About() {
     const control = useAnimation()
     const [ref, inView] = useInView()
@@ -55,14 +64,33 @@ function About() {
                             <h1 className="mb-10 text-4xl uppercase text-primary">
                                 My Skills
                             </h1>
-                            <p className="mb-8 leading-relaxed">
-                                I am a second year undergrad student pursuing
-                                Electronics and Communication Engineering at
-                                National Institute of Technology, Raipur. I
-                                belong to Jamshedpur Jharkhand. My hobbies are
-                                watching movies, cubing and drawing digital
-                                illustration.
-                            </p>
+                            <div className="grid w-full grid-cols-3 grid-rows-2 items-center justify-items-center md:flex md:justify-between">
+                                <SiReact
+                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={60}
+                                />
+                                <SiSvelte
+                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={60}
+                                />
+                                <SiTailwindcss
+                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={60}
+                                />
+                                <SiJavascript
+                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={60}
+                                />
+                                <SiFirebase
+                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={60}
+                                />
+                                <SiAdobeillustrator
+                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    mx-2
+                                    size={60}
+                                />
+                            </div>
                         </div>
                     </div>
                 </motion.div>
