@@ -4,8 +4,6 @@ import {
     AiFillInstagram,
 } from 'react-icons/ai'
 
-import './arrow.css'
-
 function HeroIcons(props) {
     const { children, lnk } = props
     return (
