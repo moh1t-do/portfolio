@@ -34,7 +34,7 @@ function Navbar() {
                 <h1 className="cursor-default">Mohit.</h1>
                 <ul
                     id="ham"
-                    className={` absolute top-20 left-1/2 w-full -translate-y-[100vh] -translate-x-1/2 gap-10 bg-black py-8  px-10 text-center transition-transform  ease-in md:static md:flex md:w-auto md:translate-y-0 md:translate-x-0 md:py-0 md:px-0  ${navActive}`}
+                    className={` absolute top-20 left-1/2 w-full -translate-y-[100vh] -translate-x-1/2 gap-10 bg-black py-8 px-10  text-center transition-transform duration-500  ease-in-out md:static md:flex md:w-auto md:translate-y-0 md:translate-x-0 md:py-0 md:px-0  ${navActive}`}
                     onClick={handleClick}
                 >
                     <Link lkn="#">Home</Link>
