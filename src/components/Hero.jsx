@@ -7,7 +7,7 @@ import {
 function HeroIcons(props) {
     const { children, lnk } = props
     return (
-        <li className="hover:text-primary">
+        <li className="relative hover:text-primary">
             <a href={lnk}>{children}</a>
         </li>
     )

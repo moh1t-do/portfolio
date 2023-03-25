@@ -2,10 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+
+    /* nav */
+    .nav-link::after {
+        @apply absolute content-[''] bg-primary h-[3px] w-[0%] left-0 -bottom-[5px] transition-all tracking-[1px]
+    }
+
+    .nav-link:hover::after {
+        @apply w-full
+    }
+
+    .nav-mobile {
+        @apply -translate-y-4 block
+    }
+
+    /* carret */
+    .carret {
+        @apply rotate-180
+    }
+}
+
 html {
     @apply scroll-smooth;
     font-family: 'Poppins', sans-serif;
 }
+
 
 /* arrow */
 
