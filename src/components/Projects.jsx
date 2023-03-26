@@ -53,11 +53,11 @@ function Tile(props) {
 
 function Projects() {
     return (
-        <div className="mb-96 bg-white">
+        <div id="projects" className="mb-[30rem] bg-white pt-16 pb-12">
             <h1 className="text-center text-4xl uppercase text-primary">
                 Projects
             </h1>
-            <div className="grid w-full grid-cols-1 grid-rows-1 gap-6 py-10 px-5 md:px-20 lg:grid-cols-3">
+            <div className="grid w-full grid-cols-1 grid-rows-1 gap-6 px-5 pt-20 md:px-20 lg:grid-cols-3">
                 {projectsData.map(({ key, image, title, subtitle, link }) => (
                     <Tile
                         key={key}

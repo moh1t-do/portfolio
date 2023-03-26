@@ -22,8 +22,13 @@
         @apply rotate-180
     }
 
+    /* cursor */
     .cursor {
         @apply fixed top-0 left-0 h-5 w-5 bg-white pointer-events-none
+    }
+
+    .skill-text {
+        @apply text-center text-primary opacity-0 transition-all
     }
 }
 
