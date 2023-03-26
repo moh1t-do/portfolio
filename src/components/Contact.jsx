@@ -8,7 +8,7 @@ function Contact() {
     return (
         <>
             <div className="fixed bottom-0 -z-10 flex h-100 w-screen items-center justify-center bg-black py-12">
-                <div className="mt-2  px-24 py-24 lg:w-4/5 lg:max-w-lg">
+                <div className="mt-2 py-24 lg:w-4/5 lg:max-w-lg">
                     <h1 className="mb-8 text-center text-4xl text-primary">
                         Contact Me
                     </h1>
