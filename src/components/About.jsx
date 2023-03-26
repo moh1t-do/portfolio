@@ -18,18 +18,17 @@ function About() {
     const boxVariant = {
         visible: { x: 0, y: -100, transition: { duration: 0.8 } },
         hidden: { x: -100, y: -100 },
-    }
-
-    const barVariant = {
-        visible: { x: '50vw', y: 0, transition: { duration: 0.8 } },
-        hidden: { x: '100vw', y: 0 },
+        mobile: { x: 0, y: 100 },
     }
 
     useEffect(() => {
+        let wd = document.getElementById('about').clientWidth
+        console.log(wd)
         if (inView) {
             control.start('visible')
         } else {
-            control.start('hidden')
+            if (wd >= 1024) control.start('hidden')
+            else control.start('mobile')
         }
     }, [control, inView])
 
