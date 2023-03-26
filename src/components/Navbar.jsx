@@ -5,7 +5,11 @@ function Link(props) {
     const { children, lkn } = props
     return (
         <li className="relative my-10 md:my-0">
-            <a className=" nav-link hover:text-primary" href={lkn}>
+            <a
+                className=" nav-link hover:text-primary"
+                href={lkn}
+                target="_blank"
+            >
                 {children}
             </a>
         </li>
