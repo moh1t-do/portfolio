@@ -66,27 +66,27 @@ function About() {
                             </h1>
                             <div className="grid w-full grid-cols-3 grid-rows-2 items-center justify-items-center md:flex md:justify-between">
                                 <SiReact
-                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
                                     size={60}
                                 />
                                 <SiSvelte
-                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
                                     size={60}
                                 />
                                 <SiTailwindcss
-                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
                                     size={60}
                                 />
                                 <SiJavascript
-                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
                                     size={60}
                                 />
                                 <SiFirebase
-                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
                                     size={60}
                                 />
                                 <SiAdobeillustrator
-                                    className="my-2 mx-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
                                     mx-2
                                     size={60}
                                 />

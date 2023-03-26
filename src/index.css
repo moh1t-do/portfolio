@@ -21,6 +21,10 @@
     .carret {
         @apply rotate-180
     }
+
+    .cursor {
+        @apply fixed top-0 left-0 h-5 w-5 bg-white pointer-events-none
+    }
 }
 
 html {
@@ -73,4 +77,8 @@ html {
         opacity: 0;
         transform: translate(-10px, -10px);
     }
+}
+
+#hero div:hover~.cursor {
+    transform: scale(5);
 }
