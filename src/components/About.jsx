@@ -20,6 +20,11 @@ function About() {
         hidden: { x: -100, y: -100 },
     }
 
+    const barVariant = {
+        visible: { x: '50vw', y: 0, transition: { duration: 0.8 } },
+        hidden: { x: '100vw', y: 0 },
+    }
+
     useEffect(() => {
         if (inView) {
             control.start('visible')
@@ -32,7 +37,7 @@ function About() {
         <>
             <div
                 id="about"
-                className="w-screen rounded-xl transition-all ease-in"
+                className="w-screen bg-white transition-all ease-in"
             >
                 <div className="h-20 w-full bg-black"></div>
                 <motion.div
@@ -66,29 +71,28 @@ function About() {
                             </h1>
                             <div className="grid w-full grid-cols-3 grid-rows-2 items-center justify-items-center md:flex md:justify-between">
                                 <SiReact
-                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
-                                    size={60}
+                                    className="my-3 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={50}
                                 />
                                 <SiSvelte
-                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
-                                    size={60}
+                                    className="my-3 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={50}
                                 />
                                 <SiTailwindcss
-                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
-                                    size={60}
+                                    className="my-3 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={50}
                                 />
                                 <SiJavascript
-                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
-                                    size={60}
+                                    className="my-3 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={50}
                                 />
                                 <SiFirebase
-                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
-                                    size={60}
+                                    className="my-3 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={50}
                                 />
                                 <SiAdobeillustrator
-                                    className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
-                                    mx-2
-                                    size={60}
+                                    className="my-3 transition-all hover:-translate-y-1 hover:scale-[1.1]"
+                                    size={50}
                                 />
                             </div>
                         </div>
