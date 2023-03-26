@@ -65,13 +65,16 @@ function Hero() {
                 >
                     Hello, I'am
                 </h1>
-                <h1
+                <motion.h1
                     onMouseEnter={textEnter}
                     onMouseLeave={textLeave}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 4 }}
                     className="-mx-1 mt-4 text-center text-8xl uppercase text-white lg:-mx-4 lg:text-left lg:text-14xl"
                 >
                     Mohit.
-                </h1>
+                </motion.h1>
             </div>
             <div
                 onMouseEnter={textEnter}
