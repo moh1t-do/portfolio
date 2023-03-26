@@ -91,7 +91,7 @@ function Hero() {
                 </ul>
                 <div className="relative mt-10">
                     <a href="#about">
-                        <div class="arrow"></div>
+                        <div className="arrow"></div>
                     </a>
                 </div>
             </div>

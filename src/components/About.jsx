@@ -87,7 +87,6 @@ function About() {
                                 />
                                 <SiAdobeillustrator
                                     className="my-2 transition-all hover:-translate-y-1 hover:scale-[1.1]"
-                                    mx-2
                                     size={60}
                                 />
                             </div>
