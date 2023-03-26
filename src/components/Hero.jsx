@@ -10,7 +10,9 @@ function HeroIcons(props) {
     const { children, lnk } = props
     return (
         <li className="relative hover:text-primary">
-            <a href={lnk}>{children}</a>
+            <a href={lnk} target="_blank">
+                {children}
+            </a>
         </li>
     )
 }
