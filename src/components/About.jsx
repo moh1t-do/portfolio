@@ -32,7 +32,7 @@ function About() {
         <>
             <div
                 id="about"
-                className="w-screen rounded-xl transition-all ease-in"
+                className="w-screen  bg-white transition-all ease-in"
             >
                 <div className="h-20 w-full bg-black"></div>
                 <motion.div

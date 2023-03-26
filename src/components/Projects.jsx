@@ -20,14 +20,14 @@ function Tile(props) {
         }
     }, [control, inView])
 
-    const { image, title, subtitle, top, link } = props
+    const { image, title, top, link } = props
     return (
         <motion.div
             id="projects"
             ref={ref}
             variants={boxVariant}
             animate={control}
-            className={`flex flex-col justify-center pt-1 ${
+            className={`flex flex-col justify-center pt-1 drop-shadow ${
                 top ? 'h-96' : 'h-80 sm:h-[26rem] md:h-[30rem] lg:h-72'
             }`}
         >
@@ -53,8 +53,8 @@ function Tile(props) {
 
 function Projects() {
     return (
-        <div>
-            <h1 className="my-4 text-center text-4xl uppercase text-primary">
+        <div className="mb-96 bg-white">
+            <h1 className="text-center text-4xl uppercase text-primary">
                 Projects
             </h1>
             <div className="grid w-full grid-cols-1 grid-rows-1 gap-6 py-10 px-5 md:px-20 lg:grid-cols-3">
@@ -68,6 +68,7 @@ function Projects() {
                     />
                 ))}
             </div>
+            <div id="contact"></div>
         </div>
     )
 }

@@ -16,7 +16,6 @@ function Navbar() {
     const [navActive, setActive] = useState('')
     const [carActive, setCar] = useState('')
     const handleClick = () => {
-        let myHam = document.getElementById('ham')
         if (navActive === 'nav-mobile') {
             setActive(' ')
             setCar(' ')
@@ -31,7 +30,7 @@ function Navbar() {
             <nav
                 className={`sticky top-0 z-50 flex h-12 w-screen items-center justify-between bg-black px-5 py-8 uppercase text-white shadow-md  md:px-20`}
             >
-                <h1 className="cursor-default">Mohit.</h1>
+                <a href="#">Mohit.</a>
                 <ul
                     id="ham"
                     className={` absolute top-20 left-1/2 w-full -translate-y-[100vh] -translate-x-1/2 gap-10 bg-black py-8 px-10  text-center transition-transform duration-500  ease-in-out md:static md:flex md:w-auto md:translate-y-0 md:translate-x-0 md:py-0 md:px-0  ${navActive}`}
@@ -41,7 +40,7 @@ function Navbar() {
                     <Link lkn="#about">About</Link>
                     <Link lkn="#about">Skills</Link>
                     <Link lkn="#projects">Projects</Link>
-                    <Link lkn="#projects">Contact Me</Link>
+                    <Link lkn="#contact">Contact Me</Link>
                 </ul>
                 <button
                     className="uppercase hover:text-primary md:hidden"
