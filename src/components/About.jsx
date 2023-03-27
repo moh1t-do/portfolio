@@ -43,7 +43,7 @@ function About() {
                     ref={ref}
                     variants={boxVariant}
                     animate={control}
-                    className="relative w-screen bg-white px-5 pt-10 lg:flex lg:w-[85vw] lg:flex-row lg:items-center lg:py-20 lg:px-20 lg:drop-shadow-lg"
+                    className="relative w-screen bg-white px-5 pt-10 md:px-20 lg:flex lg:w-[85vw] lg:flex-row lg:items-center lg:py-20 lg:drop-shadow-lg"
                 >
                     <img
                         src="./images/mohit.jpg"

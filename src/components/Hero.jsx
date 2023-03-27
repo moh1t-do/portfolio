@@ -55,7 +55,7 @@ function Hero() {
     return (
         <div
             id="hero"
-            className="flex h-screen w-screen flex-col items-center justify-start overflow-hidden bg-black px-2 py-4 pb-20 md:px-20 lg:flex-row lg:justify-between"
+            className="flex h-screen w-screen  flex-col items-center justify-start overflow-hidden bg-black px-2 py-4 pb-20 md:cursor-none md:px-20 lg:flex-row lg:justify-between"
             onMouseEnter={() => setCursorHero(true)}
             onMouseLeave={() => setCursorHero(false)}
         >
@@ -106,6 +106,7 @@ function Hero() {
                     className="pointer-events-none fixed top-0 left-0 h-5 w-5 cursor-none rounded-full bg-white opacity-0 md:opacity-100"
                     variants={variants}
                     animate={cursorVariant}
+                    transition={{ duration: 0.1 }}
                 ></motion.div>
             )}
         </div>

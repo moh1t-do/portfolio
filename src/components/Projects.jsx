@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import projectsData from './projectsData'
@@ -6,6 +6,7 @@ import projectsData from './projectsData'
 function Tile(props) {
     const control = useAnimation()
     const [ref, inView] = useInView()
+    const [isOpen, handleRead] = useState(false)
 
     const boxVariant = {
         visible: { x: 0, y: 0, transition: { duration: 0.8 } },
@@ -20,7 +21,7 @@ function Tile(props) {
         }
     }, [control, inView])
 
-    const { image, title, link, gitLink } = props
+    const { image, title, link, about, gitLink } = props
     return (
         <motion.div
             id="projects"
@@ -33,14 +34,28 @@ function Tile(props) {
                 style={{ backgroundImage: `url(${image})` }}
                 className="group relative flex-auto bg-cover bg-center bg-no-repeat text-4xl text-white"
             >
-                <div className="h-full w-full bg-black opacity-10 transition-all ease-in group-hover:opacity-80"></div>
-                <div className="absolute top-1/2 flex w-full justify-center font-bold opacity-0 hover:text-primary group-hover:opacity-100">
-                    <a href={link} target="_blank">
-                        {title}
-                    </a>
+                <div
+                    className={`h-full w-full bg-black transition-all ease-in  ${
+                        isOpen ? '' : 'opacity-10 group-hover:opacity-80'
+                    }`}
+                ></div>
+                <div
+                    className={`absolute  flex w-full justify-center font-bold  ${
+                        isOpen
+                            ? 'top-0'
+                            : ' top-1/2 opacity-0 hover:text-primary group-hover:opacity-100'
+                    }`}
+                >
+                    {isOpen ? (
+                        <p className="px-4 py-4 text-left text-sm">{about}</p>
+                    ) : (
+                        <a href={link} target="_blank">
+                            {title}
+                        </a>
+                    )}
                 </div>
             </div>
-            <div className="py-1 text-sm sm:flex sm:justify-between">
+            <div className="flex justify-between py-1 text-sm">
                 <a
                     href={gitLink}
                     target="_blank"
@@ -48,6 +63,14 @@ function Tile(props) {
                 >
                     GITHUB LINK
                 </a>
+                <button
+                    className={`cursor-pointer ${
+                        isOpen ? 'text-primary' : 'hover:text-primary'
+                    } `}
+                    onClick={() => handleRead(!isOpen)}
+                >
+                    READ MORE
+                </button>
             </div>
         </motion.div>
     )
@@ -60,15 +83,18 @@ function Projects() {
                 Projects
             </h1>
             <div className="grid w-full grid-cols-1 grid-rows-1 gap-6 px-5 pt-20 md:px-20 lg:grid-cols-3">
-                {projectsData.map(({ key, image, title, link, gitLink }) => (
-                    <Tile
-                        key={key}
-                        image={image}
-                        title={title}
-                        link={link}
-                        gitLink={gitLink}
-                    />
-                ))}
+                {projectsData.map(
+                    ({ key, image, title, link, about, gitLink }) => (
+                        <Tile
+                            key={key}
+                            image={image}
+                            title={title}
+                            link={link}
+                            about={about}
+                            gitLink={gitLink}
+                        />
+                    )
+                )}
             </div>
             <div id="contact"></div>
         </div>
