@@ -38,7 +38,7 @@ function Navbar() {
                 >
                     <Link lkn="#">Home</Link>
                     <Link lkn="#about">About</Link>
-                    <Link lkn="#about">Skills</Link>
+                    <Link lkn="#card">Skills</Link>
                     <Link lkn="#projects">Projects</Link>
                     <Link lkn="#contact">Contact Me</Link>
                 </ul>
