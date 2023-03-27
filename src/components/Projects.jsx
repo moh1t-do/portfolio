@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import projectsData from './projectsData'
+import projectsData from '../libs/projectsData'
 
 function Tile(props) {
     const control = useAnimation()
