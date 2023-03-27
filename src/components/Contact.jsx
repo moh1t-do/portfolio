@@ -14,6 +14,12 @@ const Contact = () => {
                         placeholder="Email"
                         className=" rounded-md border-2 bg-transparent p-2 text-white focus:outline-none"
                     />
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        className=" rounded-md border-2 bg-transparent p-2 text-white focus:outline-none"
+                    />
                     <textarea
                         className=" rounded-md border-2 bg-transparent p-2 text-white focus:outline-none"
                         rows="5"
