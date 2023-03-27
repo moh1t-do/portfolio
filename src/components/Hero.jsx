@@ -106,6 +106,7 @@ function Hero() {
                     className="pointer-events-none fixed top-0 left-0 h-5 w-5 cursor-none rounded-full bg-white opacity-0 md:opacity-100"
                     variants={variants}
                     animate={cursorVariant}
+                    transition={{ type: 'tween', duration: 0.1 }}
                 ></motion.div>
             )}
         </div>
