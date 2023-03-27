@@ -55,7 +55,7 @@ function Hero() {
     return (
         <div
             id="hero"
-            className="flex h-screen w-screen cursor-none flex-col items-center justify-start overflow-hidden bg-black px-2 py-4 pb-20 md:px-20 lg:flex-row lg:justify-between"
+            className="flex h-screen w-screen  flex-col items-center justify-start overflow-hidden bg-black px-2 py-4 pb-20 md:cursor-none md:px-20 lg:flex-row lg:justify-between"
             onMouseEnter={() => setCursorHero(true)}
             onMouseLeave={() => setCursorHero(false)}
         >
