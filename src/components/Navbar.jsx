@@ -37,7 +37,7 @@ function Navbar() {
                     onClick={handleClick}
                 >
                     <Link lkn="#">Home</Link>
-                    <Link lkn="#about">About</Link>
+                    <Link lkn="#card">About</Link>
                     <Link lkn="#card">Skills</Link>
                     <Link lkn="#projects">Projects</Link>
                     <Link lkn="#contact">Contact Me</Link>
