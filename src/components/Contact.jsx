@@ -9,15 +9,15 @@ const Contact = () => {
                 </h1>
                 <div className="flex flex-col gap-4">
                     <input
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        className=" rounded-md border-2 bg-transparent p-2 text-white focus:outline-none"
-                    />
-                    <input
                         type="text"
                         name="name"
                         placeholder="Name"
+                        className=" rounded-md border-2 bg-transparent p-2 text-white focus:outline-none"
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
                         className=" rounded-md border-2 bg-transparent p-2 text-white focus:outline-none"
                     />
                     <textarea
